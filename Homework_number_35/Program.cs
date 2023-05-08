@@ -10,7 +10,7 @@ namespace Homework_number_35
     {
         static void Main(string[] args)
         {
-            const string CommandSumArray = "sum";
+            const string CommandSumCollection = "sum";
             const string CommandExit = "exit";
 
             List<int> numbers = new List<int>();
@@ -18,7 +18,7 @@ namespace Homework_number_35
             string userInput;
 
             Console.WriteLine("Ведите любое число для его добавление в архив\n" +
-                              $"для подсчёта всех элементов коллекции ведите команду {CommandSumArray}\n" +
+                              $"для подсчёта всех элементов коллекции ведите команду {CommandSumCollection}\n" +
                               $"для выхода ведите команду {CommandExit}");
 
             while (isExit == false)
@@ -28,7 +28,7 @@ namespace Homework_number_35
 
                 switch (userInput)
                 {
-                    case CommandSumArray:
+                    case CommandSumCollection:
                         PrintSumCollection(numbers);
                         break;
 
@@ -55,7 +55,7 @@ namespace Homework_number_35
             Console.WriteLine($"Сумма всех элементов коллекции: {sumCollection}");
         }
 
-        private static List<int> AddNumber(List<int> numbers, string userInput)
+        private static void AddNumber(List<int> numbers, string userInput)
         {
             int number;
 
