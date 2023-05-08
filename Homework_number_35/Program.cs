@@ -68,8 +68,6 @@ namespace Homework_number_35
             {
                 Console.WriteLine("К сожалению ведённый вами символ не является цифрой");
             }
-
-            return numbers;
         }
     }
 }
